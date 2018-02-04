@@ -1,0 +1,77 @@
+@import "../mixins/variables"
+
+.skills, .about, .contacts
+  border-bottom: 1px solid #cccccc
+  display: flex
+.skills
+  flex-flow: column nowrap
+  align-items: center
+  margin-bottom: 63px
+  .s-cover
+    padding-left: 160px
+  .skill
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    h3
+      font-style: normal
+    .s-level
+      margin-left: 90px
+      width: 290px
+      height: 20px
+      .staticStars-input input:checked ~ label, .staticStars-input label, .staticStars-input label:hover, .staticStars-input label:hover ~ label
+        background: url('../../img/s-rating.png') no-repeat
+      .staticStars-input
+        /*fix floating problems*/
+        margin: 0
+        overflow: hidden
+        *zoom: 1
+        /*end of fix floating problems*/
+        position: relative
+        float: left
+      .staticStars-input input
+        margin: 0
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0)
+        opacity: 0
+        height: 20px
+        width: 29px
+        position: absolute
+        top: 0
+        z-index: 0
+      .staticStars-input input:checked ~ label
+        margin: 0
+        background-position: left bottom
+        height: 20px
+        width: 29px
+      .staticStars-input label
+        margin: 0
+        background-position: 0 0
+        height: 20px
+        width: 29px
+        float: right
+        cursor: pointer
+        position: relative
+        z-index: 1
+      .staticStars-input label:hover, .staticStars-input label:hover ~ label
+        height: 20px
+        width: 29px
+      .staticStars-input #star-0
+        left: 0
+      .staticStars-input #star-1
+        left: 29px
+      .staticStars-input #star-2
+        left: 58px
+      .staticStars-input #star-3
+        left: 87px
+      .staticStars-input #star-4
+        left: 106px
+      .staticStars-input #star-5
+        left: 135px
+      .staticStars-input #star-6
+        left: 164px
+      .staticStars-input #star-7
+        left: 193px
+      .staticStars-input #star-8
+        left: 222px
+      .staticStars-input #star-9
+        left: 251px

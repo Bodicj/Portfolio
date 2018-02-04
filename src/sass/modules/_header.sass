@@ -1,0 +1,66 @@
+@import "../mixins/variables"
+
+.header-background
+  background: url("../../img/header-background.png") center no-repeat
+  min-height: 940px
+  width: 100%
+  background-size: cover
+  @include responce_to($laptop)
+    min-height: 640px
+  header
+    width: 100%
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: space-between
+    color: #FFF
+    .navbar
+      width: 20.72%
+      margin-right: 4.69%
+      ul
+        list-style-type: none
+        display: flex
+        flex-flow: row nowrap
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        padding: 0
+        li
+          width: 25%
+          display: flex
+          justify-content: center
+          border-bottom: 1.6px solid transparent
+          &:hover
+            border-bottom: 1.6px solid #FFF
+          a
+            color: #FFF
+            font-family: 'Open Sans', sans-serif
+            font-size: 18px
+            margin-bottom: 13px
+  h1
+    color: #FFF
+    font-family: 'Open Sans', sans-serif
+    font-weight: bold
+    font-size: 60px
+    text-transform: uppercase
+    text-align: center
+    margin-top: 250px
+    @include responce_to($laptop)
+      margin-top: 125px
+      margin-bottom: 0
+  .hd-paragraph
+    color: #FFF
+    font-family: 'Open Sans', sans-serif
+    font-weight: normal
+    font-style: italic
+    font-size: 30px
+    text-transform: uppercase
+    text-align: center
+    @include responce_to($laptop)
+      margin-top: 8px
+.logo
+  font-family: Tahoma, sans-serif
+  font-weight: normal
+  font-size: 26.31px
+  margin-top: 13px
+  margin-left: 10%

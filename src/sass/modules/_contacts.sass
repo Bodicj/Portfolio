@@ -1,0 +1,53 @@
+@import "../mixins/variables"
+
+.contacts
+  flex-flow: column nowrap
+  align-items: center
+  .c-cover
+    display: flex
+    flex-flow: row nowrap
+    margin-bottom: 90px
+    .c-company
+      a
+        font-family: 'Open Sans', sans-serif
+        font-size: 15px
+        color: #888888
+        margin-bottom: 15px
+    .c-dev
+      display: flex
+      flex-flow: column nowrap
+      align-items: center
+      margin-top: 30px
+      margin-left: 140px
+      form
+        display: flex
+        flex-flow: column nowrap
+        width: 435px
+        input
+          height: 40px
+          font-family: 'Open Sans', sans-serif
+          font-size: 15px
+          color: #888888
+          margin: 10px 0
+          border: 1px solid #000
+          padding-left: 10px
+        textarea
+          font-family: 'Open Sans', sans-serif
+          font-size: 15px
+          color: #888888
+          height: 80px
+          margin: 20px 0
+          border: 1px solid #000
+          padding-left: 10px
+          padding-top: 10px
+          resize: none
+      .cd-submit
+        background: #000000
+        padding: 10px 60px
+        color: white
+        font-family: 'Open Sans', sans-serif
+        font-size: 15px
+        text-transform: uppercase
+        width: 166px
+        border: none
+

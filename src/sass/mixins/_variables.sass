@@ -1,0 +1,13 @@
+$phone-b : '(max-width: 450px)'
+$phone-md : '(max-width: 380px)'
+$phone-sm : '(max-width: 320px)'
+$tablet-portrait: '(max-device-width: 980px)'
+$tablet-landscape: '(min-width: 768px) and (max-width: 979px)'
+$laptop: '(max-width: 1440px)'
+$sm_laptop: '(max-width: 1170px)'
+$tablet: '(max-width: 1000px)'
+
+
+@mixin responce_to($media)
+  @media #{$media}
+    @content
